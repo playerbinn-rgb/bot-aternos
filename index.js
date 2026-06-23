@@ -12,6 +12,7 @@ function avviaBot() {
     const client = bedrock.createClient({
         host: config.host,
         port: config.port,
+        skipPing: true,
         username: config.username,
         offline: true,
         version: config.version
